@@ -2,18 +2,23 @@
   <head>
     <style>
         #main {
-        font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        padding: 5px;
+          font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          padding: 5px;
+          display: inline;
+          overflow-x: scroll;
+          overflow-y: hidden;
         }
         .list {
           margin: 5px;
           border: 1px solid rgb(204, 204, 204);
           border-radius: 3px;
           display: inline-block;
+          white-space: normal;
           width: 250px;
           vertical-align: top;
           padding: 4px 4px 0px;
           background-color: rgb(226, 228, 230);
+          float: left;
         }
         .list-header {
           padding: 8px 4px;
@@ -38,8 +43,8 @@
           color: rgb(77, 77, 77);
         }
         .card-list {
-          overflow-y: auto;
-          overflow-x: visible;
+          overflow-y: scroll;
+          overflow-x: hidden;
           height: auto;
           width: 100%;
         }
@@ -55,7 +60,7 @@
           line-height: 18px;
           border: 1px solid rgb(204, 204, 204);
           border-radius: 4px;
-          width: 100%;
+          width: 240px;
           text-align: left;
           background-color: rgb(255, 255, 255);
         }
