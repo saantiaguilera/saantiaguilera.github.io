@@ -9,6 +9,10 @@
           background-color: rgb(255, 185, 100);
         }
 
+        ::-webkit-scrollbar { 
+          display: none; 
+        }
+
         .container {
           display: block;
           background-color: rgb(255, 185, 100);
