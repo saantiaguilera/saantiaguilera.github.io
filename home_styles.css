@@ -8,11 +8,10 @@
           overflow-x: scroll;
           overflow-y: hidden;
           font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-          background-color: rgb(255, 185, 100);
         }
 
         .container {
-          background-color: rgb(255, 185, 100);
+          background-color: rgb(38, 114, 71);
           width: 100%;
           overflow-x: auto;
           overflow-y: hidden;
