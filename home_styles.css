@@ -9,6 +9,10 @@
           font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
         }
 
+        a {
+          text-decoration:none;
+        }
+
         .profile-thumbnail {
           display: inline-block;
           vertical-align: top;
