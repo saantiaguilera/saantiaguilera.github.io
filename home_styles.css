@@ -5,7 +5,6 @@
           padding: 0px;
           margin: 0px;
           height: 100vh;
-          overflow-x: scroll;
           overflow-y: hidden;
           font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
         }
@@ -29,7 +28,7 @@
 
         .container {
           background-color: rgb(38, 114, 71);
-          width: 100%;
+          width: auto;
           overflow-x: auto;
           overflow-y: hidden;
           height: calc(100vh - 150px);
