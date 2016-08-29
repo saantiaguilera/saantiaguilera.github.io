@@ -5,21 +5,19 @@
           padding: 0px;
           margin: 0px;
           height: 100vh;
+          overflow-x: scroll;
+          overflow-y: hidden;
           font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
           background-color: rgb(255, 185, 100);
         }
 
-        ::-webkit-scrollbar { 
-          display: none; 
-        }
-
         .container {
-          display: inline-block;
           background-color: rgb(255, 185, 100);
-          width: auto;
-          overflow-x: scroll;
+          width: 100%;
+          overflow-x: auto;
           overflow-y: hidden;
           height: 100vh;
+          white-space: nowrap;
         }
 
         .list {
@@ -33,7 +31,6 @@
           vertical-align: top;
           padding: 4px 4px 0px;
           background-color: rgb(226, 228, 230);
-          float: left;
         }
        
         .list-header {
