@@ -61,6 +61,46 @@
           background-color: transparent;
         }
 
+        .header-contact-container {
+          width: auto;
+          height: 100%;
+          vertical-align: top;
+          background-color: transparent;
+          display: inline-block;
+          overflow: hidden;
+          float: right;
+          margin-top: 15px;
+          margin-right: 5%;
+        }
+
+        .header-contact {
+          width: auto;
+          vertical-align: center;
+        }
+
+        .header-contact-image {
+          border-radius: 15px;
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          margin: 4px;
+          position: relative;
+        }
+
+        .header-contact-name {
+          display: inline-block;
+          position: relative;
+          vertical-align: top;
+          margin-top: 10px;
+          height: 20px;
+          color: rgb(235, 232, 230);
+          width: auto;
+          font-weight: 400;
+          overflow: hidden;
+          text-decoration: none;
+          background-color: transparent;
+        }
+
         .list-container {
           background-color: rgb(38, 114, 71);
           width: auto;
