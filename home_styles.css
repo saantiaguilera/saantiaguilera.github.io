@@ -27,7 +27,7 @@
           display: inline-block;
           white-space: normal;
           width: 250px;
-          max-height: 100vh;
+          max-height: 95vh;
           vertical-align: top;
           padding: 4px 4px 0px;
           background-color: rgb(226, 228, 230);
@@ -47,7 +47,7 @@
           overflow-x: hidden;
           height: auto;
           width: 100%;
-          max-height: calc(100vh - 62px);
+          max-height: calc(95vh - 62px);
           margin-bottom: 5px;
         }
  
