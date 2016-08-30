@@ -1,6 +1,6 @@
         #main {
         }
- 
+
         html, body {
           padding: 0px;
           margin: 0px;
@@ -11,6 +11,30 @@
 
         a {
           text-decoration:none;
+        }
+
+        .card-list::-webkit-scrollbar {
+          display: none;
+        }
+
+        ::-webkit-scrollbar {
+          width: 8px;
+          background-color: rgba(0,0,0,0.1);
+          -webkit-border-radius: 100px;
+        }
+
+        ::-webkit-scrollbar:hover {
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        ::-webkit-scrollbar-thumb:vertical {
+          background: rgba(0,0,0,0.5);
+          -webkit-border-radius: 100px;
+        }
+
+        ::-webkit-scrollbar-thumb:vertical:active {
+          background: rgba(0,0,0,0.61);
+          -webkit-border-radius: 100px;
         }
 
         .profile-thumbnail {
@@ -128,7 +152,7 @@
           padding: 4px 4px 0px;
           background-color: rgb(226, 228, 230);
         }
-       
+
         .list-header {
           padding: 8px 4px;
           position: relative;
@@ -137,16 +161,17 @@
           line-height: 18px;
           text-align: left;
         }
-       
+
         .card-list {
           position: block;
           overflow-x: hidden;
+          overflow-y: auto;
           height: auto;
           width: 100%;
           max-height: calc(95vh - 150px - 42px);
           margin-bottom: 5px;
         }
- 
+
         .card {
           padding: 6px 8px 4px;
           margin-bottom: 4px;
