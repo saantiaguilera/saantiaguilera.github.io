@@ -138,24 +138,22 @@
           text-align: left;
         }
 
-		  .slimScrollDiv { 
-		    border: 1px solid #ccc; 
-			 margin:10px; 
-		  }
-
-        .card-list {
+        #card-list {
           position: block;
           overflow-x: hidden;
-          overflow-y: hidden;
           height: auto;
           width: 100%;
           max-height: calc(95vh - 150px - 42px);
           margin-bottom: 5px;
         }
 
-		  .card-list:hover {
-		    overflow-y: scroll;
-		  }
+		    .mousescroll {
+			    overflow-y: hidden;
+		    }
+
+		    .mousescroll:hover {
+		      overflow-y: scroll;
+		    }
 
         .card {
           padding: 6px 8px 4px;
