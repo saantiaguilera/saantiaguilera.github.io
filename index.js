@@ -14,12 +14,12 @@
                 o = ops || {},
                 cwidth = o.width || 'auto',
                 cheight = o.height || '250px',
-                size = o.size || '7px',
+                size = o.size || '3px',
                 color = o.color || '#000',
                 position = o.position || 'right',
                 opacity = o.opacity || .4,
                 alwaysVisible = o.alwaysVisible === true;
-            
+
                 //used in event handlers and for better minification
                 var me = $(this);
 
@@ -40,16 +40,16 @@
 
                 //create scrollbar rail
                 var rail  = $(divS).css({
-                    width: '15px',
+                    width: '8px',
                     height: '100%',
                     position: 'absolute',
                     top: 0
                 });
 
                 //create scrollbar
-                var bar = $(divS).attr({ 
-                    'class': 'slimScrollBar ', 
-                    style: 'border-radius: ' + size 
+                var bar = $(divS).attr({
+                    'class': 'slimScrollBar ',
+                    style: 'border-radius: ' + size
                     }).css({
                         background: color,
                         width: size,
@@ -76,13 +76,13 @@
                 me.parent().append(rail);
 
                 //make it draggable
-                bar.draggable({ 
-                    axis: 'y', 
+                bar.draggable({
+                    axis: 'y',
                     containment: 'parent',
                     start: function() { isDragg = true; },
                     stop: function() { isDragg = false; hideBar(); },
-                    drag: function(e) 
-                    { 
+                    drag: function(e)
+                    {
                         //scroll content
                         scrollContent(0, $(this).position().top, false);
                     }
@@ -166,7 +166,7 @@
                     {
                         this.addEventListener('DOMMouseScroll', _onWheel, false );
                         this.addEventListener('mousewheel', _onWheel, false );
-                    } 
+                    }
                     else
                     {
                         document.attachEvent("onmousewheel", _onWheel)
@@ -191,7 +191,7 @@
                     //recalculate bar height
                     getBarHeight();
                     clearTimeout(queueHide);
-                    
+
                     //show only when required
                     if(barHeight >= me.outerHeight()) {
                         return;
@@ -211,7 +211,7 @@
                 }
 
             });
-            
+
             //maintain chainability
             return this;
         }
@@ -222,12 +222,3 @@
     });
 
 })(jQuery);
-
-
-//invalid name call
-              $('#chatlist').slimscroll({
-                  color: '#00f',
-                  size: '10px',
-                  width: '50px',
-                  height: '150px'                  
-              });
